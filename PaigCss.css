@@ -1,0 +1,59 @@
+.flexcontainer{
+  display: flex;
+  flex-direction: row;
+}
+#title{
+  font-family: "Chronicles";
+  color:#b19d9d;
+  font-size: 2.5vw;
+  margin-left: 20%;
+  margin-bottom: 1vw;
+}
+.contentTitle{
+  width: 60%;
+}
+  
+.LineTitle{
+  color:#b19d9d;
+font-family: "Chronicles";
+  font-size: 2.2vw;
+  margin-top: 2vw;
+  margin-bottom: 5px;
+}
+#line{
+  border-bottom:2px solid rgb(0, 0, 0) ;
+  width: 95%;
+  margin-bottom:2vw;
+}
+
+.contentText{
+  font-family:'Gill Sans';
+  color:#a09999;
+  padding-left: 1vw;
+  padding-right: 2vw;
+  font-size: 1.5vw;
+}
+
+.slideshow-container{
+  margin-right: 0.6vw;
+  width: 40%;
+}
+#geralt:hover:after {
+content: attr(data-name);
+position: absolute;
+left: 0;
+bottom: 0;
+background: rgba(5,13,156,.55);
+color: #fff;
+text-align: center;
+font-family: cursive;
+font-size: 14px;
+padding: 3px 0;
+width: 100%;
+}
+@font-face { 
+  font-family: "Chronicles"; 
+  src: url("./fonts/Chronicles.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
