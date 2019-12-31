@@ -7,16 +7,22 @@
   font-style: oblique;  
   display: block;
   margin-top: 2vw;margin-bottom: 2vw ;
+  text-align: justify;
 }
-.content-conteiner{  
+.content-container{  
   display: flex;
   flex-direction: column;
 }
-.Img-content{
-  width: 94%;
+.Img-container{
   margin-left: 3%;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.Img-content{
+  width: 94%;  
   height:auto;
   box-shadow:0px 0px 10px 1px rgb(0, 0, 0);
+  transition: transform 0.2s;
 }
 .gamesLogo{
   width: 80%;
@@ -41,7 +47,7 @@
   height: auto;
   z-index: -1;
 }
-.video-conteiner{
+.video-container{
   width: 90%;
   height: 25vw;  
   margin-left: 5%;

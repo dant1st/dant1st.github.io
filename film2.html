@@ -1,31 +1,46 @@
 <html>
     <head> 
+        <title>Вселеная ведьмака</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="MainCss.css" />
         <link rel="stylesheet" type="text/css" href="textCss.css" />
+        <link rel="stylesheet" type="text/css" href="navbar.css" />      
         <link rel="stylesheet" type="text/css" href="slaider.css" />  
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">       
     </head>
 <body>
+    <script type="text/javascript" src="scrollUP.js"></script>
+    <script type="text/javascript" src="imgmove.js"></script>
+    <script type="text/javascript" src="navbar.js"></script>
 <div id="headerMain">        
         <div id="header">
             <a href="index.html" class="logoChColor"><img id="logo" src="logo4.png" /></a>            
             <div class="HeaderItem"><a href="film.html" class="HeaderText" style="text-align: center;">Кино</a></div>
             <div class="HeaderItem"><a href="characters.html" class="HeaderText" style="text-align: center;">Персонажи</a></div>
             <div class="HeaderItem"><a href="games.html" class="HeaderText" style="text-align: center;">Видеоигры</a></div>
-    </div> 
-    
+            <div id="wrapper" class="HeaderItem">
+                <a id="nav-toggle" href="#"><span></span></a>
+                
+            </div>
+        </div>
+        <nav id='menu' class='menu'>
+            <div class="navbarItem"><a href="film.html" class="navbarText" content>Кино</a></div>
+            <div class="navbarLine"></div>
+            <div class="navbarItem"><a href="characters.html" class="navbarText" content>Персонажи</a></div>
+            <div class="navbarLine"></div>
+            <div class="navbarItem"><a href="games.html" class="navbarText" content>Видеоигры</a></div>
+        </nav>   
     <div id="MainPage"> 
          <div id="Page">
                 <div id="PageHeader"></div>  
             <div  id="PageLeft">               
-                <div class="content-conteiner">                
+                <div class="content-container">                
                     <span id="title" style="margin-left: 5%; white-space: pre;">            Ведьмак:<br>на полвека поэзии позже</span>
                     <div class="contentText">
                         польский художественный фильм, действие которого происходит во вселенной «Ведьмака». Это фанатский и полностью некоммерческий проект. 
                     </div>
-                    <iframe class="video-conteiner" src="https://www.youtube.com/embed/XlS4jXIuIV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video-container" src="https://www.youtube.com/embed/XlS4jXIuIV8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div class="contentText">
                         Действие фильма происходит через 36 лет после событий, описанных Анджеем Сапковским в его книгах о Геральте. Главные герои — сын барда Лютика,
                         Трисс Меригольд и последний ведьмак Ламберт. Они охотятся за молодой чародейкой, укравшей книгу заклинаний.
@@ -67,17 +82,17 @@
         </div>              
     </div>  
     <div id="footer">
-        <div class="geralt-conteiner">
+        <div class="geralt-container">
             <img id="geraltInFooter" src="background\footerGeralt2.png">
         </div>
-        <div class="conteiner">
+        <div class="container">
             <div class="footerText">Мы в социальных сетях:</div>
             <div class="social">            
-                <div class="ico-conteiner">
+                <div class="ico-container">
                 <a class="ico-a" href="https://vk.com/id309911310"><img class="ico" src="social\vk.png"></a>
                 <a class="ico-a" href="https://vk.com/id309911310"><img class="ico" src="social\fb.png"></a>                
                 </div>
-                <div class="ico-conteiner">
+                <div class="ico-container">
                 <a class="ico-a" href="https://vk.com/id309911310"><img class="ico" src="social\instagram.png"></a>
                 <a class="ico-a" href="https://vk.com/id309911310"><img class="ico" src="social\pinterest.png"></a>
                 </div>
@@ -85,6 +100,7 @@
         </div>      
     </div>     
 </div>    
+<div id="scrollToTop" onclick="goUp();"> <img id="scrollToTopIMG" src="scroll.png" title="На Верх" alt=""></div> 
 <script type="text/javascript" src="slaider.js"></script>
 </body>
 </html>

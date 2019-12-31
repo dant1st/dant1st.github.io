@@ -4,32 +4,47 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="MainCss.css" />
-        <link rel="stylesheet" type="text/css" href="textCss.css" />        
+        <link rel="stylesheet" type="text/css" href="textCss.css" />      
+        <link rel="stylesheet" type="text/css" href="navbar.css" />        
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
 <body>
+    <script type="text/javascript" src="scrollUP.js"></script>
+    <script type="text/javascript" src="imgmove.js"></script>
+    <script type="text/javascript" src="navbar.js"></script>
 <div id="headerMain">        
-        <div id="header">
-            <a href="index.html" class="logoChColor"><img id="logo" src="logo4.png" /></a>            
-            <div class="HeaderItem"><a href="film.html" class="HeaderText" style="text-align: center;">Кино</a></div>
-            <div class="HeaderItem"><a href="characters.html" class="HeaderText" style="text-align: center;">Персонажи</a></div>
-            <div class="HeaderItem"><a href="games.html" class="HeaderText" style="text-align: center;">Видеоигры</a></div>
-    </div>     
+    <div id="header">
+        <a href="index.html" class="logoChColor"><img id="logo" src="logo4.png" /></a>            
+        <div class="HeaderItem"><a href="film.html" class="HeaderText" content>Кино</a></div>
+        <div class="HeaderItem"><a href="characters.html" class="HeaderText" content>Персонажи</a></div>
+        <div class="HeaderItem"><a href="games.html" class="HeaderText" content>Видеоигры</a></div>
+        <div id="wrapper" class="HeaderItem">
+            <a id="nav-toggle" href="#"><span></span></a>
+            
+        </div>
+    </div>
+    <nav id='menu' class='menu'>
+        <div class="navbarItem"><a href="film.html" class="navbarText" content>Кино</a></div>
+        <div class="navbarLine"></div>
+        <div class="navbarItem"><a href="characters.html" class="navbarText" content>Персонажи</a></div>
+        <div class="navbarLine"></div>
+        <div class="navbarItem"><a href="games.html" class="navbarText" content>Видеоигры</a></div>
+    </nav>     
     <div id="MainPage"> 
          <div id="Page">
-                <div id="PageHeader"></div>  
-            <div  id="PageLeft" style="height: 200vw;">               
-                <img class="Img-content" src="background\witcher1Logo.png" alt="" style="box-shadow: none;">
+                <div id="PageHeader" ></div>  
+            <div  id="PageLeft" style="height: 250vw;">               
+                <div class="Img-container"><img class="Img-content" src="background\witcher1Logo.png" alt="" style="box-shadow: none;"></div>
                 <span class="contentText">
                     Фэнтэзийная вымышленная вселенная, созданная польским писателем Анджеем Сапковским. 
                     Описана в саге о Ведьмаке, состоящей из восьми книг и нескольких отдельных рассказов.
                 </span>
-                <img src="background\books.jpg" class="Img-content" alt="книги ведьмак">
+                <div class="Img-container"><img src="background\books.jpg" class="Img-content" alt="книги ведьмак"></div>
                 <span class="contentText">
                     Действие книг происходит в вымышленном мире, напоминающем Восточную Европу времён позднего средневековья, 
                     где рядом с людьми существуют разного рода волшебные существа и чудовища. 
                 </span>
-                <img src="background\map.jpg" class="Img-content" alt="карта вселеной ведьмака">
+                <div class="Img-container"><img src="background\map.jpg" class="Img-content" alt="карта вселеной ведьмака"></div>
                 <span class="contentText">
                     Геральт из Ривии — один из последних «ведьмаков», бродячих охотников на чудовищ. В то время как первые 
                     книги цикла представляют собой сборники рассказов о приключениях Геральта, 
@@ -37,17 +52,17 @@
                     сюжет последующих книг представляет собой более масштабную историю,
                     построенную вокруг Геральта и его воспитанницы Цири, обладающей чудесными способностями. 
                 </span>
-                <img src="background\Maingeralt.jpg" class="Img-content" alt="">
+                <div class="Img-container"><img src="background\Maingeralt.jpg" class="Img-content" alt=""></div>
                 <span class="contentText">
                     По мотивам произведений был снят польский телесериал, а на данный момент в производстве находится сериал от Netflix;
                     выпущены компьютерные игры: («Ведьмак», «Ведьмак 2: Убийцы королей» и «Ведьмак 3: Дикая охота»); 
                     написана и поставлена рок-опера; на родине писателя издавались комиксы о похождениях Геральта и других героев его саги.
                 </span>      
-                <img src="film\film1ex2.jpg" class="Img-content" alt="">                                
+                <div class="Img-container"><img src="film\film1ex2.jpg" class="Img-content" alt=""> </div>                              
             </div> 
             <div id="PageFooter"></div>         
         </div>
-        <div id="primary" style="height: 195vw;">
+        <div id="primary" style="height: 245vw;">
             <div  id="PageRight">
                 <a class="link" href="film.html"><img  src="background\film1.jpg" class="PageRightInfo" /></a>
                 <a class="link" href="characters.html"><img src="background\персонажи.jpg" class="PageRightInfo"  /></a>
@@ -57,17 +72,17 @@
         </div>              
     </div>  
     <div id="footer">
-        <div class="geralt-conteiner">
+        <div class="geralt-container">
             <img id="geraltInFooter" src="background\footerGeralt2.png">
         </div>
-        <div class="conteiner">
+        <div class="container">
             <div class="footerText">Мы в социальных сетях:</div>
             <div class="social">            
-                <div class="ico-conteiner">
+                <div class="ico-container">
                 <a class="ico-a" href="https://vk.com/id309911310"><img class="ico" src="social\vk.png"></a>
                 <a class="ico-a" href="https://vk.com/id309911310"><img class="ico" src="social\fb.png"></a>                
                 </div>
-                <div class="ico-conteiner">
+                <div class="ico-container">
                 <a class="ico-a" href="https://vk.com/id309911310"><img class="ico" src="social\instagram.png"></a>
                 <a class="ico-a" href="https://vk.com/id309911310"><img class="ico" src="social\pinterest.png"></a>
                 </div>
@@ -75,5 +90,6 @@
         </div>      
     </div>    
 </div>    
+<div id="scrollToTop" onclick="goUp();"> <img id="scrollToTopIMG" src="scroll.png" title="На Верх" alt=""></div> 
 </body>
 </html>
